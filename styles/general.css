@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: white;
+    font-family: Roboto;
+}
+
+body {
+    width: 100vw;
+
+    background-color: rgb(20, 20, 20);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    font-weight: normal;
+}

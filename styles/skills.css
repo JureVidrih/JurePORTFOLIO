@@ -1,0 +1,12 @@
+section#skills {
+    display: flex;
+
+    width: 100%;
+    height: auto;
+
+    padding: 1cm 0 0 0;
+
+    flex-direction: column;
+
+    text-align: center;
+}
