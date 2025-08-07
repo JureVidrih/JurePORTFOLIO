@@ -1,0 +1,13 @@
+body>footer {
+    display: flex;
+
+    width: 100%;
+    height: 0.75cm;
+
+    background: black;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.7rem;
+}
