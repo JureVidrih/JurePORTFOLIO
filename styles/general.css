@@ -28,3 +28,25 @@ a:visited {
 a:hover {
     font-weight: normal;
 }
+
+div#scroll-to-top-button {
+    position: fixed;
+
+    bottom: 1cm;
+    right: 1cm;
+
+    display: flex;
+
+    width: 1.45cm;
+    height: 1.45cm;
+
+    border: 1px solid #ffe3d0;
+    border-radius: 0.725cm;
+
+    background-color: #a84e12;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.5rem;
+}
