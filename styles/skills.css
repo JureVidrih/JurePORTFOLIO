@@ -25,6 +25,18 @@ section#skills-list {
     flex-flow: row wrap;
     justify-content: center;
     align-content: space-evenly;
+
+    opacity: 0.0;
+
+    transform: scale(70%, 70%);
+
+    transition: opacity .3s ease-out, transform .3s ease-out;
+}
+
+section#skills-list.visible {
+    opacity: 1.0;
+
+    transform: scale(100%, 100%);
 }
 
 p#skills-legal-notice {
