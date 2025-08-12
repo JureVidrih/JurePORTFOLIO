@@ -6,7 +6,7 @@ const section_skills = document.querySelector("section#skills");
 const h1_waypoint = new Waypoint({
     element: h1,
     handler: function(direction) {
-        if(direction == "down") {
+        if(direction == "down" && !button_scroll_to_top.classList.contains("scroll_to_top_button_visible")) {
             button_scroll_to_top.classList.toggle("scroll_to_top_button_visible");
         }
     }
