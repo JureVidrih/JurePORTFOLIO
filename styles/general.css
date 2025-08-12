@@ -29,7 +29,7 @@ a:hover {
     font-weight: normal;
 }
 
-div#scroll-to-top-button {
+.scroll-to-top-button {
     position: fixed;
 
     bottom: 1cm;
@@ -48,5 +48,13 @@ div#scroll-to-top-button {
     justify-content: center;
     align-items: center;
 
+    opacity: 0.0;
+
     font-size: 1.5rem;
+
+    transition: opacity .1s ease-out;
+}
+
+.scroll_to_top_button_visible {
+    opacity: 1.0;
 }
