@@ -1,5 +1,21 @@
 section#projects {
-    display: none;
+    display: flex;
+
+    width: 100%;
+    height: auto;
+
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+section#projects h2 {
+    margin-bottom: 1.5cm;
+}
+
+section#projects p {
+    width: 30cm;
+
+    margin-bottom: 3cm;
 
     text-align: center;
 }
