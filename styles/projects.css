@@ -12,10 +12,37 @@ section#projects h2 {
     margin-bottom: 1.5cm;
 }
 
-section#projects p {
+section#projects>p {
     width: 30cm;
 
     margin-bottom: 3cm;
 
     text-align: center;
+}
+
+section#projects>h3 {
+    margin: 0.25cm 0;
+    
+    align-self: center;
+}
+
+article.project {
+    display: flex;
+
+    width: 30cm;
+    height: auto;
+
+    margin: 0.5cm 0;
+
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.project-title {
+    margin: 0 0 0.1cm 0;
+}
+
+article.project>p {
+    text-align: left;
 }
