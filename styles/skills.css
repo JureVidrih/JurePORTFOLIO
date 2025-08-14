@@ -65,7 +65,7 @@ div.skill {
 }
 
 div.skill:hover {
-    transform: translateY(-25px);
+    transform: translateY(-0.3cm);
 }
 
 div.skill-button {
@@ -87,7 +87,9 @@ div.skill-button {
 }
 
 div.skill-button>p {
+    margin: 0;
+
     font-size: 1rem;
     
-    transform: translateY(-4px);
+    transform: translateY(-0.14cm);
 }
