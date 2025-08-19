@@ -17,6 +17,10 @@ body {
     background-color: rgb(20, 20, 20);
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 a {
     color: white;
     text-decoration: none;

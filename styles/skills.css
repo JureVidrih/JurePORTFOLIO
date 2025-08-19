@@ -93,3 +93,78 @@ div.skill-button>p {
     
     transform: translateY(-0.14cm);
 }
+
+/* SKILL POPUP OVERLAY AND WINDOW */
+
+div.skill-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    visibility: hidden;
+    opacity: 0.0;
+
+    display: flex;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: opacity .1s ease-out;
+}
+
+div.skill-popup-overlay-visible {
+    visibility: visible;
+    opacity: 1.0;
+}
+
+article.skill-popup {
+    display: flex;
+
+    width: 15cm;
+    height: 8cm;
+
+    padding: 0.3cm 0.15cm 0cm;
+
+    border: 1px solid #ffe3d0;
+    border-radius: 0.5cm;
+
+    background-color: rgb(20, 20, 20);
+
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+article.skill-popup>h4 {
+    color: #c46526;
+    font-size: 2rem;
+    text-align: center;
+}
+
+article.skill-popup>section.skill-descriptions {
+    display: flex;
+
+    width: 100%;
+    height: auto;
+
+    padding-top: 0.7cm;
+
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+article.skill-popup>section.skill-descriptions h5 {
+    margin-bottom: 0.1cm;
+
+    font-size: 1.09rem;
+}
+
+article.skill-popup>section.skill-descriptions>section {
+    flex: 1;
+}
