@@ -43,44 +43,67 @@ const button_busyn = document.querySelector("#button-busyn");
 const project_busyn = document.querySelector("#project-busyn");
 const project_busyn_height = project_busyn.scrollHeight;
 
-project_busyn.style.transition = "max-height 1.5s ease-out, opacity .2s ease-out, transform .2s ease-out";
+project_busyn.style.transition = "max-height 1.5s ease-out, background-color .08s, opacity .2s ease-out, transform .2s ease-out";
 
 button_busyn.addEventListener('click', () => {
     button_busyn.classList.toggle("button-project-more-active");
     project_busyn.style["max-height"] = (project_busyn.style["max-height"] == project_busyn_height+"px" ? null : project_busyn_height+"px");
+    if(project_busyn.style["background-color"] == "rgb(35, 35, 35)") {
+        setTimeout(() => { project_busyn.style["background-color"] = null; }, 1500);
+    } else {
+        project_busyn.style["background-color"] = "rgb(35, 35, 35)";
+    }
 });
 
 const button_repl = document.querySelector("#button-repl");
 const project_repl = document.querySelector("#project-repl");
 const project_repl_height = project_repl.scrollHeight;
 
-project_repl.style.transition = "max-height "+(1.5*(project_repl_height/project_busyn_height))+"s ease-out, opacity .2s ease-out, transform .2s ease-out";
+let project_repl_maxheight_transition = (1.5*(project_repl_height/project_busyn_height));
+project_repl.style.transition = "max-height "+project_repl_maxheight_transition+"s ease-out, background-color .08s, opacity .2s ease-out, transform .2s ease-out";
 
 button_repl.addEventListener('click', () => {
     button_repl.classList.toggle("button-project-more-active");
     project_repl.style["max-height"] = (project_repl.style["max-height"] == project_repl_height+"px" ? null : project_repl_height+"px");
+    if(project_repl.style["background-color"] == "rgb(35, 35, 35)") {
+        setTimeout(() => { project_repl.style["background-color"] = null; }, project_repl_maxheight_transition*1000);
+    } else {
+        project_repl.style["background-color"] = "rgb(35, 35, 35)";
+    }
 });
 
 const button_eval = document.querySelector("#button-eval");
 const project_eval = document.querySelector("#project-eval");
 const project_eval_height = project_eval.scrollHeight;
 
-project_eval.style.transition = "max-height "+(1.5*(project_eval_height/project_busyn_height))+"s ease-out, opacity .2s ease-out, transform .2s ease-out";
+let project_eval_maxheight_transition = (1.5*(project_eval_height/project_busyn_height));
+project_eval.style.transition = "max-height "+project_eval_maxheight_transition+"s ease-out, background-color .08s, opacity .2s ease-out, transform .2s ease-out";
 
 button_eval.addEventListener('click', () => {
     button_eval.classList.toggle("button-project-more-active");
     project_eval.style["max-height"] = (project_eval.style["max-height"] == project_eval_height+"px" ? null : project_eval_height+"px");
+    if(project_eval.style["background-color"] == "rgb(35, 35, 35)") {
+        setTimeout(() => { project_eval.style["background-color"] = null; }, project_eval_maxheight_transition*1000);
+    } else {
+        project_eval.style["background-color"] = "rgb(35, 35, 35)";
+    }
 });
 
 const button_logger = document.querySelector("#button-logger");
 const project_logger = document.querySelector("#project-logger");
 const project_logger_height = project_logger.scrollHeight;
 
-project_logger.style.transition = "max-height "+(1.5*(project_logger_height/project_busyn_height))+"s ease-out, opacity .2s ease-out, transform .2s ease-out";
+let project_logger_maxheight_transition = (1.5*(project_logger_height/project_busyn_height));
+project_logger.style.transition = "max-height "+project_logger_maxheight_transition+"s ease-out, background-color .08s, opacity .2s ease-out, transform .2s ease-out";
 
 button_logger.addEventListener('click', () => {
     button_logger.classList.toggle("button-project-more-active");
     project_logger.style["max-height"] = (project_logger.style["max-height"] == project_logger_height+"px" ? null : project_logger_height+"px");
+    if(project_logger.style["background-color"] == "rgb(35, 35, 35)") {
+        setTimeout(() => { project_logger.style["background-color"] = null; }, project_logger_maxheight_transition*1000);
+    } else {
+        project_logger.style["background-color"] = "rgb(35, 35, 35)";
+    }
 });
 
 // Projects waypoint toggle
