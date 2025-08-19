@@ -129,74 +129,76 @@
         <section id="projects">
             <h2>Projects</h2>
             <p>These are some of the projects that I have been building over the years or are coming in the future.</p>
-            <article id="project-busyn" class="project">
-                <section class="project-header">
-                    <h4 class="project-title">busyn</h4>
-                    <p class="project-description">App&game engine for multiple platforms</p>
-                    <button id="button-busyn" class="project-more-button"><p>+</p></button>
-                </section>
-                <section class="project-description">
-                    <h5>What is it?</h5>
-                    <p>busyn is an app/game engine built with technologies such as React, React Native, Three.js, cannon.js and electron that I have been working on&off since 2019. It is not in the finished state yet, but it is my flagship project.
-                        It supports building of apps & games as desktop or mobile applications using React components for things like creating GUIs and 3D scenes with support for physics. It also comes with various systems for various needs, such as
-                        storage, AI, async execution (and possible multi-threaded execution in the future with Web Workers API), convenient GUI theme management and toast messages support and more.
-                    </p>
-                    <h5>Project's story</h5>
-                    <p>This project originally started of as a game engine for mobile devices, primarily using React Native and Three.js for building scenes with 3D objects. But, later on, I ported the engine to desktop by replacing React Native with React
-                        and using electron to bundle the resulting web app as a desktop application. After that, I named the electron build busyn-electron and the React Native mobile build as busyn-rn. After that, however,
-                        I continued to work only on the desktop version of the engine, and the original, mobile version was left unattended -- however, I plan to work on the mobile version sometime in the future.
-                    </p>
-                    <h5>About cross-platform porting</h5>
-                    <p>I should also note, that I once ported an app that I've wrote for Android devices using this engine to a desktop platform in only, I believe, 30 minutes or so. Since both the mobile and the desktop version of the engine both use Javascript,
-                        Three.js and technologies that are similar such as React and React Native, this wasn't a hard undertaking. And, since React Native uses flexbox for its GUI layout, the ported application's GUI on the desktop didn't look that broken either.
-                        But, some additional work was needed.
-                    </p>
-                    <h5>Author's note</h5>
-                    <p>It should be also noted, that building such a project is something of a massive undertaking for one single person and the project still needs a lot of work moving forward. Things like adding features that I want to be in the initial release,
-                        fixing known bugs, testing features, improving performance, writing technical documentation, commenting and documenting the code are all tasks that still await me in the future.
-                    </p>
-                </section>
-            </article>
-            <article id="project-repl" class="project">
-                <section class="project-header">
-                    <h4 class="project-title">JureREPL</h4>
-                    <p class="project-description">Build REPL interfaces easily</p>
-                    <button id="button-repl" class="project-more-button"><p>+</p></button>
-                </section>
-                <section class="project-description">
-                    <h5>What is it?</h5>
-                    <p>JureREPL is a library that helps with the creation of REPL interfaces that look good with additional functionality in an elegant way. 
-                        <br /><br /><b>This is an upcoming project.</b></p>
-                </section>
-            </article>
-            <article id="project-eval" class="project">
-                <section class="project-header">
-                    <h4 class="project-title">JureEVAL</h4>
-                    <p class="project-description">Evaluate arithmetical expressions</p>
-                    <button id="button-eval" class="project-more-button"><p>+</p></button>
-                </section>
-                <section class="project-description">
-                    <h5>What is it?</h5>
-                    <p>JureEVAL is a Java library that can evaluate arithmetical expression passed in as strings. It also supports common mathematical methods and even user-defined methods for doing calculations.
-                        There really is no limit as to how deep and long these arithmetical expressions are, and JureEVAL supports storing results in variables and arrays that can then be used in further arithmetical expressions.
-                        <br /><br /><b>This is an upcoming project.</b>
-                    </p>
-                </section>
-            </article>
-            <article id="project-logger" class="project">
-                <section class="project-header">
-                    <h4 class="project-title">JureLOGGER</h4>
-                    <p class="project-description">Logging solution for Java apps</p>
-                    <button id="button-logger" class="project-more-button"><p>+</p></button>
-                </section>
-                <section class="project-description">
-                    <h5>What is it?</h5>
-                    <p>JureLOGGER is a Java library that allows the user to log messages either in console, files or onto a server via HTTP requests. It is up to the user of the library to choose which end-point to log messagges to,
-                        and the library can log messages into multiple end-points, as per the user's choice.
-                        <br /><br /><b>This is an upcoming project.</b>
-                    </p>
-                </section>
-            </article>
+            <section id="project-list">
+                <article id="project-busyn" class="project">
+                    <section class="project-header">
+                        <h4 class="project-title">busyn</h4>
+                        <p class="project-description">App&game engine for multiple platforms</p>
+                        <button id="button-busyn" class="project-more-button"><p>+</p></button>
+                    </section>
+                    <section class="project-description">
+                        <h5>What is it?</h5>
+                        <p>busyn is an app/game engine built with technologies such as React, React Native, Three.js, cannon.js and electron that I have been working on&off since 2019. It is not in the finished state yet, but it is my flagship project.
+                            It supports building of apps & games as desktop or mobile applications using React components for things like creating GUIs and 3D scenes with support for physics. It also comes with various systems for various needs, such as
+                            storage, AI, async execution (and possible multi-threaded execution in the future with Web Workers API), convenient GUI theme management and toast messages support and more.
+                        </p>
+                        <h5>Project's story</h5>
+                        <p>This project originally started of as a game engine for mobile devices, primarily using React Native and Three.js for building scenes with 3D objects. But, later on, I ported the engine to desktop by replacing React Native with React
+                            and using electron to bundle the resulting web app as a desktop application. After that, I named the electron build busyn-electron and the React Native mobile build as busyn-rn. After that, however,
+                            I continued to work only on the desktop version of the engine, and the original, mobile version was left unattended -- however, I plan to work on the mobile version sometime in the future.
+                        </p>
+                        <h5>About cross-platform porting</h5>
+                        <p>I should also note, that I once ported an app that I've wrote for Android devices using this engine to a desktop platform in only, I believe, 30 minutes or so. Since both the mobile and the desktop version of the engine both use Javascript,
+                            Three.js and technologies that are similar such as React and React Native, this wasn't a hard undertaking. And, since React Native uses flexbox for its GUI layout, the ported application's GUI on the desktop didn't look that broken either.
+                            But, some additional work was needed.
+                        </p>
+                        <h5>Author's note</h5>
+                        <p>It should be also noted, that building such a project is something of a massive undertaking for one single person and the project still needs a lot of work moving forward. Things like adding features that I want to be in the initial release,
+                            fixing known bugs, testing features, improving performance, writing technical documentation, commenting and documenting the code are all tasks that still await me in the future.
+                        </p>
+                    </section>
+                </article>
+                <article id="project-repl" class="project">
+                    <section class="project-header">
+                        <h4 class="project-title">JureREPL</h4>
+                        <p class="project-description">Build REPL interfaces easily</p>
+                        <button id="button-repl" class="project-more-button"><p>+</p></button>
+                    </section>
+                    <section class="project-description">
+                        <h5>What is it?</h5>
+                        <p>JureREPL is a library that helps with the creation of REPL interfaces that look good with additional functionality in an elegant way. 
+                            <br /><br /><b>This is an upcoming project.</b></p>
+                    </section>
+                </article>
+                <article id="project-eval" class="project">
+                    <section class="project-header">
+                        <h4 class="project-title">JureEVAL</h4>
+                        <p class="project-description">Evaluate arithmetical expressions</p>
+                        <button id="button-eval" class="project-more-button"><p>+</p></button>
+                    </section>
+                    <section class="project-description">
+                        <h5>What is it?</h5>
+                        <p>JureEVAL is a Java library that can evaluate arithmetical expression passed in as strings. It also supports common mathematical methods and even user-defined methods for doing calculations.
+                            There really is no limit as to how deep and long these arithmetical expressions are, and JureEVAL supports storing results in variables and arrays that can then be used in further arithmetical expressions.
+                            <br /><br /><b>This is an upcoming project.</b>
+                        </p>
+                    </section>
+                </article>
+                <article id="project-logger" class="project">
+                    <section class="project-header">
+                        <h4 class="project-title">JureLOGGER</h4>
+                        <p class="project-description">Logging solution for Java apps</p>
+                        <button id="button-logger" class="project-more-button"><p>+</p></button>
+                    </section>
+                    <section class="project-description">
+                        <h5>What is it?</h5>
+                        <p>JureLOGGER is a Java library that allows the user to log messages either in console, files or onto a server via HTTP requests. It is up to the user of the library to choose which end-point to log messagges to,
+                            and the library can log messages into multiple end-points, as per the user's choice.
+                            <br /><br /><b>This is an upcoming project.</b>
+                        </p>
+                    </section>
+                </article>
+            </section>
         </section>
     </main>
     <footer>

@@ -33,7 +33,7 @@ section#skills-list {
     transition: opacity .3s ease-out, transform .3s ease-out;
 }
 
-section#skills-list.visible {
+section#skills-list.skills-list-visible {
     opacity: 1.0;
 
     transform: scale(100%, 100%);
