@@ -141,6 +141,14 @@ article.skill-popup {
 
     flex-direction: column;
     justify-content: flex-start;
+
+    transform: scale(50%, 50%);
+
+    transition: transform .1s ease-out;
+}
+
+article.skill-popup-visible {
+    transform: scale(100%, 100%);
 }
 
 article.skill-popup>h4 {

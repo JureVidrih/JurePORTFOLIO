@@ -57,6 +57,7 @@ window.addEventListener('load', () => {
             document.body.classList.toggle("no-scroll");
             overlay.classList.toggle("skill-popup-overlay-hidden");
             overlay.classList.toggle("skill-popup-overlay-visible");
+            skill_popup.classList.toggle("skill-popup-visible");
         }
     }
 
@@ -64,6 +65,7 @@ window.addEventListener('load', () => {
         if(overlay.classList.contains("skill-popup-overlay-visible")) {
             document.body.classList.toggle("no-scroll");
             overlay.classList.toggle("skill-popup-overlay-visible");
+            skill_popup.classList.toggle("skill-popup-visible");
             setTimeout(() => { overlay.classList.toggle("skill-popup-overlay-hidden"); }, 100);
         }
     }
