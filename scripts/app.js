@@ -55,6 +55,7 @@ window.addEventListener('load', () => {
             skills_have.innerText = skills;
             skills_lack.innerText = lacked_skills;
             document.body.classList.toggle("no-scroll");
+            overlay.classList.toggle("skill-popup-overlay-hidden");
             overlay.classList.toggle("skill-popup-overlay-visible");
         }
     }
@@ -63,6 +64,7 @@ window.addEventListener('load', () => {
         if(overlay.classList.contains("skill-popup-overlay-visible")) {
             document.body.classList.toggle("no-scroll");
             overlay.classList.toggle("skill-popup-overlay-visible");
+            setTimeout(() => { overlay.classList.toggle("skill-popup-overlay-hidden"); }, 100);
         }
     }
 

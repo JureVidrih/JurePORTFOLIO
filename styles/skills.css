@@ -101,7 +101,6 @@ div.skill-popup-overlay {
     top: 0;
     left: 0;
 
-    visibility: hidden;
     opacity: 0.0;
 
     display: flex;
@@ -116,6 +115,10 @@ div.skill-popup-overlay {
     align-items: center;
 
     transition: opacity .1s ease-out;
+}
+
+div.skill-popup-overlay-hidden {
+    visibility: hidden;
 }
 
 div.skill-popup-overlay-visible {
